@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  gap: 20px;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  border: 1px solid #000;
+  border-radius: 10px;
+  max-width: 80px;
+  padding: 10px;
+}
