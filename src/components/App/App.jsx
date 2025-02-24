@@ -1,12 +1,16 @@
 import Profile from "../Profile/Profile";
-import UsersData from "../../Users-data.json";
-import ProfileMedia from "../ProfileMedia/ProfileMedia";
+import userData from "../../Users-data.json";
 
 export default function App() {
   return (
-    <div>
-      <Profile data={UsersData} />
-      <ProfileMedia data={UsersData} />
-    </div>
+    <>
+      <Profile
+        name={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        image={userData.avatar}
+        stats={userData.stats}
+      />
+    </>
   );
 }
